@@ -12,10 +12,22 @@ var swiperBanner = new Swiper(".banner-swiper", {
 });
 
 var swiperNews = new Swiper(".news-swiper", {
+    loop: true,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".news-next",
+      prevEl: ".news-prev",
     },
     slidesPerView: 2,
     spaceBetween: 14,
+});
+
+var swiperProducts = new Swiper(".products-swiper", {
+    navigation: {
+      nextEl: ".products-next",
+      prevEl: ".products-prev",
+    },
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    slidesOffsetBefore: 173,
+    slidesOffsetAfter: 173,
 });
