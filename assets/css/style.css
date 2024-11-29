@@ -66,6 +66,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0px 8px 30px #00000029;
 }
 
 header .logo {
@@ -473,6 +474,7 @@ footer {
     gap: 177px;
     padding-top: 50px;
     color: white;
+    position: relative;
 }
 
 footer .info {
@@ -527,4 +529,19 @@ footer .links .services {
 
 footer .links .pages {
     grid-column: 3;
+}
+
+footer .up {
+    position: absolute;
+    bottom: 47px;
+    right: 72px;
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: #47a4f540;
+    box-shadow: 0px 10px 20px #0000001A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(270deg);
 }
