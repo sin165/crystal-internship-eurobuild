@@ -267,3 +267,78 @@ header .lang {
     line-height: 24px;
 }
 
+/* ========== CONTACT ========== */
+
+#contact {
+    display: flex;
+}
+
+#contact .picture,
+#contact .text {
+    width: 50%;
+    height: 546px;
+    position: relative;
+}
+
+#contact .picture {
+    z-index: 10;
+}
+
+#contact .picture::before {
+    content: "";
+    position: absolute;
+    right: 34px;
+    bottom: 0;
+    width: 614px;
+    height: 421px;
+    background-color: white;
+}
+
+#contact .picture img {
+    width: 697px;
+    height: 429px;
+    object-fit: cover;
+    position: absolute;
+    right: 76px;
+    top: 59px;
+}
+
+#contact .text,
+#contact .text::before {
+    background-color: #47a4f54d;
+}
+
+#contact .text {
+    padding: 107px 0 0 163px;
+}
+
+#contact .text::before {
+    content: "";
+    width: 461px;
+    height: 546px;
+    position: absolute;
+    top: 0;
+    left: -461px;
+}
+
+#contact .text h2 {
+    line-height: 46px;
+}
+
+#contact .text p {
+    margin-bottom: 10px;
+    max-width: 520px;
+}
+
+#contact .text p:first-of-type {
+    margin: 20px 0 23px 0;
+}
+
+#contact a {
+    color: black;
+}
+
+#contact .socials {
+    display: flex;
+    gap: 21px;
+}
