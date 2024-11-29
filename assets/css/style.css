@@ -462,3 +462,69 @@ header .lang {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
 }
+
+/* ========== FOOTER ========== */
+
+footer {
+    background-color: #2C4861;
+    height: 342px;
+    display: flex;
+    justify-content: center;
+    gap: 177px;
+    padding-top: 50px;
+    color: white;
+}
+
+footer .info {
+    width: 291px;
+}
+
+footer .logo {
+    width: 291px;
+    height: 93px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 13px;
+}
+
+footer .logo h2 {
+    font-size: 40px;
+    line-height: 54px;
+    font-weight: bold;
+    color: #2C4861;
+}
+
+footer .socials {
+    margin: 26px 0 14px 0;
+    display: flex;
+    gap: 21px;
+}
+
+footer .links {
+    width: 776px;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 45px repeat(auto-fit, 25px);
+    gap: 15px 8px;
+    grid-auto-flow: column;
+    justify-items: left;
+}
+
+footer .links a {
+    color: white;
+    font-size: 18px;
+}
+
+footer .links .catalogue {
+    grid-column: 1;
+}
+
+footer .links .services {
+    grid-column: 2;
+}
+
+footer .links .pages {
+    grid-column: 3;
+}
