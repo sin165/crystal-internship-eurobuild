@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    font-family: "Nunito Sans", sans-serif;
+}
+
 h1,
 h2,
 h3 {
@@ -44,6 +48,56 @@ header {
     height: 131px;
     background-color: white;
     z-index: 30;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 50px;
+    line-height: 76px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #2C4861;
+}
+
+header>div {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+}
+
+header nav {
+    display: flex;
+    gap: 49px;
+}
+
+header nav a {
+    font-size: 18px;
+    padding: 8px 8px 6px 8px;
+    border-bottom: 2px solid transparent;
+    color: black;
+}
+
+header nav a:hover,
+header nav a.selected {
+    border-bottom: 2px solid #0059A8;
+}
+
+header .lang {
+    box-sizing: border-box;
+    width: 106px;
+    height: 34px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #00000033;
+    display: flex;
+    justify-content: space-between;
+    gap: 5;
+    align-items: center;
+    color: white;
+    cursor: pointer;
 }
 
 /* ========== BANNER ========== */
